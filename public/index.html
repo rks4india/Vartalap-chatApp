@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en hi">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>वार्तालाप</title>
+    <link rel="shortcut icon" href="/chat.png" type="image/x-icon">
+</head>
+<body>
+    <div class="join-container">
+        <div class="join-header">
+            <img src="/chat.png" alt="chatApp" class="logo" width="50px" style="margin-right: 5px;">
+            <h1 style="color: white;">Welcome to 'वार्तालाप'</h1>
+        </div>
+        <main class="join-main">
+            <form action="home.html">
+                <div class="form-control">
+                    <label for="username">Username</label>
+                    <input
+                        type="text"
+                        name="username"
+                        id="username"
+                        placeholder="Enter username"
+                        required autofocus
+                    />
+                </div>
+                <div class="form-control">
+                    <label for="room">Room</label>
+                    <select name="room" id="room">
+                        <option value="CSE">CSE</option>
+                        <option value="IT">IT</option>
+                        <option value="ECE">ECE</option>
+                        <option value="ME">ME</option>                        
+                        <option value="CE">CE</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn">Join Chat</button>
+            </form>
+        </main>
+    </div>
+
+    <footer class="footer">
+        <h3>Designed & Developed by <span>Rahul Kumar Soni</span></h3>
+        <h4>Copyright &copy; 2021, All Rights Reserved.</h4>
+    </footer>
+</body>
+</html>

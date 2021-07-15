@@ -1,0 +1,293 @@
+@import url('https://fonts.googleapis.com/css2?family=Asap+Condensed:wght@400;500&family=Mukta:wght@200&family=Parisienne&family=Red+Hat+Display:wght@400;500&family=Reem+Kufi:wght@400;500;600&family=Sacramento&family=Tourney&family=Unna:ital@1&family=Yanone+Kaffeesatz:wght@200;300;400&family=Yomogi&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    /* height: 100vh; */
+    background-image: linear-gradient(rgb(255,255,255), rgb(225, 171, 225));
+}
+
+.container{
+    max-width: 1100px;        
+    margin: 30px auto;    
+    box-shadow: 10px 10px 20px 5px rgba(0, 0, 0, 0.294);
+    margin-bottom: 23px;
+    /* border: 5px solid red; */
+}
+
+nav{
+    display: flex;
+    background: #1b1bf1eb;
+    align-items: center;
+    padding: 0 8px;
+    justify-content: space-between;
+}
+
+.logo-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: 'Gotu', sans-serif;
+    /* margin: auto; */
+    /* width: 50px;
+    height: 50px; */
+}
+
+.chat-main{
+    display: grid;
+    grid-template-columns: 1fr 3fr; 
+    max-height: 82%;    
+}
+
+.sidebar{
+    background: rgba(0, 0, 255, 0.708);
+    color: white;
+    padding: 20px 15px;
+    overflow-y: auto;
+}
+
+.sidebar h2{
+    font-family: 'Tourney', cursive;    
+    font-size: 20px;
+    background: rgba(0,0,0, 0.1);
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.sidebar h2 select{    
+    font-size: 15px;
+    color: blue;
+    font-weight: bold;
+    width: 100%;
+    outline: none;
+    padding: 5px;  
+    height: 40px;  
+}
+
+.sidebar h3{
+    margin-bottom: 14px;
+    font-family: 'Asap Condensed', sans-serif;
+}
+
+.sidebar ul li {
+    font-family: 'Reem Kufi', sans-serif;
+    padding: 10px 0;
+    list-style: none;
+    font-size: 18px;
+    font-weight: normal;
+    color: #fbf4fb;
+}
+
+.msg-container{
+    background: white;
+    max-height: 500px;
+    overflow-y: auto;    
+}
+
+.message {    
+    background-color: rgba(167, 163, 163, 0.352);
+    max-width: 30%;
+    padding: 5px 10px;
+    margin: 0px 0px;
+    border-radius: 11px;
+    color: blueviolet;
+}
+
+.msg-container p{
+    /* display: inline-block; */
+    margin-bottom: 15px;    
+}
+
+.msg-container h4{
+    font-weight: normal;
+    color: #de0e0ecf;
+    font-family: 'Unna', serif;
+}
+
+.msg-container h4 span{
+    margin-left: 5px;
+    color: rgb(125 28 125);
+}
+.msg-container p{
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+
+.left{
+    display: block;
+    float: left;
+    clear: both;
+    margin-left: 5px;
+}
+
+.right{
+    display: block;
+    float:right;
+    clear: both;
+    margin-right: 5px;
+}
+
+.center{
+    display: block;
+    float:left;
+    clear: both;
+    margin-left: 40%;
+    /* margin: auto; */
+    background: none;
+    border: none;
+    font-size: small;    
+    color: #429241;
+}
+
+.send{
+    background: blue;
+}
+
+#send-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 5px;
+    text-align: center;
+    max-width: 985px;
+    width: 100%;
+}
+
+#messageInp {
+    width: 92%;
+    padding: 8px 5px;
+    background: white;
+    outline: none;
+    border: none;
+}
+
+.btn {
+    font-family: 'Red Hat Display', sans-serif;
+    cursor: pointer;
+    border: none;
+    font-weight: bold;
+    color: blue;
+    background: #fbf4fb;
+    padding: 8px 5px;
+}
+
+.btn i{    
+    color: blue;    
+}
+
+/* index Page */
+.join-container {
+	max-width: 500px;
+	margin: 80px auto;
+	color: #fff;
+    background: blue;
+    box-shadow: 10px 10px 20px 5px rgba(0, 0, 0, 0.294);
+}
+
+.join-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Gotu', sans-serif;
+    padding: 15px;
+    background: #1b1bf1eb;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.join-main {
+	padding: 30px 40px;
+	background: rgba(0, 0, 255, 0.708);
+}
+
+.join-main p {
+	margin-bottom: 20px;
+}
+
+.join-main .form-control {
+	margin-bottom: 20px;
+    font-family: 'Asap Condensed', sans-serif;
+}
+
+.join-main label {
+    font-size: 22px;
+    font-weight: bold;
+	display: block;
+	margin-bottom: 5px;
+}
+
+.join-main input[type='text'] {
+	font-size: 16px;
+	padding: 5px;
+	height: 40px;
+	width: 100%;
+    border-style: none;
+}
+
+.join-main select {
+	font-size: 16px;
+	padding: 5px;
+	height: 40px;
+	width: 100%;
+}
+
+.join-main .btn {
+	margin-top: 20px;
+	width: 100%;
+    font-size: 15px;
+    background: #fbf4fb;
+}
+
+footer.footer {
+    font-family: 'Gotu', sans-serif;
+    background: #b58989;
+    text-align: center;
+    align-items: center;
+    padding: 1rem 0;
+    color: #00c1fb;
+}
+
+.footer span{
+    font-family: 'Tourney', cursive;
+    font-size: 1.5rem;
+    color: #051c2f;
+}
+
+.footer h4{
+    font-family: 'Reem Kufi', sans-serif;
+    color: azure;
+}
+
+@media (max-width: 740px) {
+	.chat-main {
+		display: block;
+	}
+    .msg-container{
+        background: white;
+        min-height: 30vh;
+        overflow-y: auto;
+    }
+
+	.chat-sidebar {
+		display: none;
+	}
+
+    .msg-container{        
+        max-height: 300px;
+        overflow-y: auto;        
+    }
+
+    #send-container{
+        display: block;
+    }
+
+    #send-container input{
+        width: 100%;
+    }
+    
+    #send-container .btn{
+        margin-top: 5px;
+    }
+}

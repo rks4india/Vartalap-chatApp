@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en hi">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>वार्तालाप</title>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/qs/6.9.2/qs.min.js"
+      integrity="sha256-TDxXjkAUay70ae/QJBEpGKkpVslXaHHayklIVglFRT4="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="/socket.io/socket.io.js"></script>
+    <script defer src="/client.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/44d0ed347c.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="shortcut icon" href="/chat.png" type="image/x-icon">
+</head>
+<body>
+    
+    <div class="container">
+        <nav>
+            <div class="logo-container">
+                <img src="/chat.png" alt="chatApp" class="logo" width="50px" style="margin-right: 5px;">
+                <h1 style="color: white;">Welcome to 'वार्तालाप'</h1>
+            </div>
+            <div class="button">
+                <button class="btn end" id="leave-btn">Leave Chatroom</button>
+            </div>
+        </nav>
+
+        <div class="chat-main">
+            <div class="sidebar">
+                <h3><i class="fas fa-comments"></i> Room Name:</h3>
+                <h2 id="room-name">
+                    
+                </h2>
+                <h3><i class="fas fa-users"></i> Users</h3>
+                <h4 id="usersCount"></h4>
+                <ul id="users">
+                </ul>
+            </div>
+            <div class="msg-container">
+                <div class="name-time">
+                    
+                </div>
+                <!-- <h4 class="right name">Rahul <span class="time">4:50 pm</span></h4>
+                <p class="right message">Hey how are you?</p>
+                <h4 class="left name">Anish</h4>
+                <p class="left message">Hi bhai, I am good. What about you?</p>
+                <h5 class="center message">Rahul joined the chat</h5> -->
+            </div>    
+        </div>
+
+        <div class="send">
+            <form action="#" id="send-container">
+                <input type="text" name="messageInp" id="messageInp" placeholder="Type your message here..." required autofocus>
+                <button class="btn" type="submit"><i class="fas fa-paper-plane"></i> Send</button>
+            </form>
+        </div>
+    </div>  
+    
+    <footer class="footer">
+        <h3>Designed & Developed by <span>Rahul Kumar Soni</span></h3>
+        <h4>Copyright &copy; 2021, All Rights Reserved.</h4>
+    </footer>
+
+
+</body>    
+</html>
