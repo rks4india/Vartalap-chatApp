@@ -19,5 +19,4 @@
 3. Navigate to directory `cd .\Vartalap-chatApp-master`
 4. Install all npm dependencies `npm install`
 5. Start the server `npm start node` 
-6. Finnaly, Navigate to `http://127.0.0.1:5000`.
-7. Open two or more tabs in your browsers with address `http://127.0.0.1:5000` and choose same Room to enjoy chatting.
+6. Open two or more tabs in your browsers with address `http://127.0.0.1:5000` and choose same Room to enjoy chatting.
