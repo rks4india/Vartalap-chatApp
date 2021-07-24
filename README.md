@@ -15,8 +15,10 @@
 ---
 ### How to run
 1. Download the code then extract
-2. Open the terminal (or Use Ctrl + backtick character)
-3. Navigate to directory `cd .\Vartalap-chatApp-master`
-4. Install all npm dependencies `npm install`
-5. Start the server `npm start node` 
-6. Open two or more tabs in your browsers with address `http://127.0.0.1:5000` and choose same Room to enjoy chatting.
+2. Download Nodejs (https://nodejs.org/en/) and install. If already installed then ignore.
+3. Set the path of Nodejs (Path of 'bin' folder to be set as user environment variable).
+4. Open the terminal (or Use Ctrl + backtick character)
+5. Navigate to directory `cd .\Vartalap-chatApp-master`
+6. Install all npm dependencies `npm install`
+7. Start the server `npm start node` 
+8. Open two or more tabs in your browsers with address `http://127.0.0.1:5000` and choose same Room to enjoy chatting.
